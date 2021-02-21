@@ -111,7 +111,7 @@ $(document).ready(function () {
 		if(window_width !== $(window).width()){		
 			$('.visible').removeClass('visible');	
 			$('.rs-menu-toggle').removeClass('rs-menu-toggle-open').addClass( "rs-menu-toggle-close" );	
-			$('.rs-menu').css( "height", "0" ).addClass( "rs-menu-close" );		
+			$('.rs-menu').addClass( "rs-menu-close" );		
 		
 			$('span.rs-menu-parent').html( arrow_down );		
 			window_width = $(window).width();	
