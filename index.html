@@ -87,6 +87,9 @@
                                         <!-- About Start -->
                                         <li><a href="about.html">About</a></li>
                                         <!-- About End -->
+
+                                        <li><a href="blog.html">Blog</a>
+                                        </li>
                                     </ul>
                                 </nav>
                             </div>
@@ -435,6 +438,8 @@
                             <div class="copyright">
                                 <p>© Copyright 2019-2023 <a href="#">Bleunomics</a></p>
                             </div>
+                        </div>
+                    </div>
 
                     <div class="col-lg-4 col-md-12 md-mb-30">
                         <div class="footer-widget">
@@ -460,6 +465,7 @@
                             <br>
                             <div id="success"></div>
                         </div>
+                    </div>
     </footer>
     <!-- Footer End -->
 
@@ -501,7 +507,9 @@
         $('.form-button').click(function () {
             var email = $('#email').val();
             console.log(email);
+
             const store = new SteinStore("https://api.steinhq.com/v1/storages/603bec42f62b6004b3eb66d7");
+
             store.append("Sheet1", [{
                     email: email,
                 }])
